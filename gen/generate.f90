@@ -32,6 +32,7 @@ program generate
     roots(6) = parse_expr(arena, '('//py//'-oldy)/'//dt, ok, message)
     if (.not. ok) error stop message
     spec%name = str('ink_filter_leaf')
+    spec%pure_procedure = .true.
     spec%generator = str('FortInk gen/generate.f90 through FortSym and FortGen')
     spec%regenerate_command = str('tools/regenerate.sh')
     allocate(spec%args(9), spec%outputs(6))

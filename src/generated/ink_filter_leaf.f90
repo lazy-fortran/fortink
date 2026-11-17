@@ -2,8 +2,8 @@
 ! Generator: FortInk gen/generate.f90 through FortSym and FortGen
 ! Regenerate with: tools/regenerate.sh
 
-subroutine ink_filter_leaf(x, y, t, p, oldx, oldy, oldt, oldp, width, outx, outy, outp, radius, vx, &
-        vy)
+pure subroutine ink_filter_leaf(x, y, t, p, oldx, oldy, oldt, oldp, width, outx, outy, outp, radius, &
+        vx, vy)
     use, intrinsic :: iso_fortran_env, only: dp => real64
     implicit none
     real(dp), intent(in) :: x, y, t, p, oldx, oldy, oldt, oldp, width
