@@ -1,0 +1,10 @@
+name = "fortink-generate"
+version = "0.1.0"
+[dependencies]
+fortsym = { git = "https://github.com/lazy-fortran/fortsym", rev = "257ea66f6071f516a02f5400eeb32e6abac6e9d4" }
+[build]
+auto-executables = true
+[[executable]]
+name = "generate"
+source-dir = "."
+main = "generate.f90"

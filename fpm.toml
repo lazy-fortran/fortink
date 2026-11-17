@@ -1,0 +1,12 @@
+name = "fortink"
+version = "0.1.0"
+license = "MIT"
+author = "Christopher Albert"
+[build]
+auto-tests = true
+[fortran]
+implicit-typing = false
+implicit-external = false
+source-form = "free"
+[install]
+library = true
