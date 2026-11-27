@@ -1,7 +1,7 @@
 # FortInk
 
 Pressure-sensitive digital ink in Fortran, with a matching JavaScript model for
-browser comparisons. [Source](https://code.tugraz.at/yard/fortink).
+browser comparisons. [Source](https://github.com/lazy-fortran/fortink).
 
 The model filters position and pressure, increases position response with speed,
 keeps stationary dots stable, and snaps the released endpoint to measured input.
@@ -28,7 +28,7 @@ tools/regenerate.sh --check
 ```
 
 The browser uses LFortran and Emscripten through
-[FortShell](https://code.tugraz.at/yard/fortshell). That application compares
+[FortShell](https://github.com/lazy-fortran/fortshell). That application compares
 Fortran WebAssembly with the same JavaScript model and several renderers.
 This filter is an initial implementation. Pencil-to-display latency and parity
 with commercial notebook applications need physical-device measurements.
